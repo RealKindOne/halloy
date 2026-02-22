@@ -14,8 +14,10 @@ use crate::{Server, isupport, target};
 
 pub mod channel;
 pub mod nickname;
+pub mod private_messages;
 pub mod text_input;
 
+pub use self::private_messages::PrivateMessages;
 use crate::buffer::{
     BacklogSeparator, DateSeparators, SkinTone, StatusMessagePrefix, Timestamp,
 };
@@ -30,6 +32,7 @@ pub struct Buffer {
     pub channel: Channel,
     pub server_messages: ServerMessages,
     pub internal_messages: InternalMessages,
+    pub private_messages: PrivateMessages,
     pub status_message_prefix: StatusMessagePrefix,
     pub chathistory: ChatHistory,
     pub backlog_separator: BacklogSeparator,
