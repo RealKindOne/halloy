@@ -2,8 +2,9 @@ verbose = "info"
 no_progress = true
 
 index_files = ["README.md"]
+root_dir = "book/src"
 
 include_fragments = true
 
-exclude-all-private = true
-exclude = [ '^http://.*', '^https://.*', '^irc://.*', '^ircs://.*' ]
+exclude_all_private = true
+exclude = [ '^http://.*', '^https://.*', '^irc://.*', '^ircs://.*', '^file://.*' ]

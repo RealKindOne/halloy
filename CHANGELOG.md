@@ -1,5 +1,9 @@
 # Unreleased
 
+Added:
+
+- Setting to hide consecutive timestamps (`buffer.timestamp.hide_consecutive`)
+
 Fixed:
 
 - Window state is saved even if altered shortly before quitting
