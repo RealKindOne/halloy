@@ -25,6 +25,7 @@ pub struct Sidebar {
     pub padding: Padding,
     pub spacing: Spacing,
     pub order_channels_by: OrderChannelsBy,
+    pub lowercase_channel: bool,
 }
 
 #[derive(Debug, Clone, Deserialize)]

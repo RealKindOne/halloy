@@ -965,6 +965,11 @@ fn upstream_buffer_button<'a>(
                 }
             }
             buffer::Upstream::Channel(_, channel) => {
+                let channel = if config.sidebar.lowercase_channel {
+                    channel.to_string().to_lowercase()
+                } else {
+                    channel.to_string()
+                };
                 text(channel.to_string())
                     .style(buffer_title_style)
                     .font_maybe(buffer_title_font)
